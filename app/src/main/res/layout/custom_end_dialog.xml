@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffffff">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/top_text"
+        android:gravity="center"
+        android:background="#DA5F6A"
+        android:scaleType="fitCenter"
+        android:text="Success!"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your address has been saved. You will now be brought back to the main page"
+        android:id="@+id/text_dialog"
+        android:gravity="center"
+        android:layout_below="@+id/top_text"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+
+        android:textSize="18sp"
+        android:textColor="#ff000000" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text="OK"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btn_dialog_ok"
+        android:gravity="center_vertical|center"
+        android:background="@android:color/black"
+        android:layout_below="@+id/text_dialog"
+        android:layout_marginBottom="20dp"
+        android:textColor="#ffffffff" />
+
+</RelativeLayout>

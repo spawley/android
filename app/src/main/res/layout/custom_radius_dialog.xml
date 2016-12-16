@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffffff">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/top_text_radius"
+        android:gravity="center"
+        android:text="Please Select The Radius"
+        android:background="#DA5F6A"
+        android:scaleType="fitCenter"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/seek_bar_radius_display"
+        android:gravity="center"
+        android:layout_below="@+id/top_text_radius"
+        android:text="500 Meters"
+        android:scaleType="fitCenter"
+        android:textSize="16sp" />
+
+
+    <SeekBar
+        android:id="@+id/seek1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/seek_bar_radius_display"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:progress="0"
+        android:max="2500"
+        android:secondaryProgress="20" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginLeft="10dp"
+        android:text="Confirm"
+        android:id="@+id/btn_dialog_confirm"
+        android:gravity="center_vertical|center"
+        android:layout_alignParentLeft="true"
+        android:background="@android:color/black"
+        android:layout_below="@+id/seek1"
+        android:layout_marginBottom="20dp"
+        android:textColor="#ffffffff" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginRight="10dp"
+        android:background="@android:color/black"
+        android:text="Back"
+        android:id="@+id/btn_dialog_back"
+        android:gravity="center_vertical|center"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/seek1"
+        android:layout_marginBottom="20dp"
+        android:textColor="#ffffffff" />
+</RelativeLayout>

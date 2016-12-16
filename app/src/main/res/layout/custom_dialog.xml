@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffffff">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/top_text"
+        android:gravity="center"
+        android:background="#DA5F6A"
+        android:scaleType="fitCenter"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Is this the correct address?"
+        android:id="@+id/text_dialog"
+        android:gravity="center"
+        android:layout_below="@+id/top_text"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+
+        android:textSize="18sp"
+        android:textColor="#ff000000" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginLeft="10dp"
+        android:text="Yes"
+        android:id="@+id/btn_dialog_yes"
+        android:gravity="center_vertical|center"
+        android:layout_alignParentLeft="true"
+        android:background="@android:color/black"
+        android:layout_below="@+id/text_dialog"
+        android:layout_marginBottom="20dp"
+        android:textColor="#ffffffff" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginRight="10dp"
+        android:background="@android:color/black"
+        android:text="No"
+        android:id="@+id/btn_dialog_no"
+        android:gravity="center_vertical|center"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/text_dialog"
+        android:layout_marginBottom="20dp"
+        android:textColor="#ffffffff" />
+    </RelativeLayout>
